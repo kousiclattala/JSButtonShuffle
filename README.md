@@ -12,12 +12,13 @@ Initial State. The initial layout looks like this:
 
 | 1 | 2 | 3 |\
 | 4 | 5 | 6 |\
-| 7 | 8 | 9 |\
+| 7 | 8 | 9 |
 
 Element IDs. Each element in the document must have an id, specified below:
 
 The button container div's id must be btns.
 The initial innerHTML labels must have the following button ids:
+
 | innerHTML | id |
 |:-----------|----:|
 | 1 | btn1 |
@@ -29,6 +30,8 @@ The initial innerHTML labels must have the following button ids:
 | 7 | btn7 |
 | 8 | btn8 |
 | 9 | btn9 |
+
+
 Styling. The document's elements must have the following styles:
 The width of btns is , relative to the document body's width.
 Each button (i.e., btn1 through btn9) satisfies the following:
@@ -38,6 +41,7 @@ The font-size is 24px.
 Behavior. Each time btn5 is clicked, the innerHTML text on the grid's outer buttons (i.e., bt1, btn2, btn3, btn4, btn6, btn7, btn8, btn9) must rotate in the clockwise direction. Do not update the button id's.
 The .js and .css files are in different directories, so use the link tag to provide the CSS file path and the script tag to provide the JS file path:
 
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,22 +52,24 @@ The .js and .css files are in different directories, so use the link tag to prov
     	<script src="js/buttonsGrid.js" type="text/javascript"></script>
     </body>
 </html>
+```
+
 Explanation
 
 Initially, the buttons look like this:
 
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
+| 1 | 2 | 3 |\
+| 4 | 5 | 6 |\
 | 7 | 8 | 9 |
 
 After clicking btn5 time, they look like this:click1
 
-| 4 | 1 | 2 |
-| 7 | 5 | 3 |
+| 4 | 1 | 2 |\
+| 7 | 5 | 3 |\
 | 8 | 9 | 6 |
 
 After clicking btn5 more time (for a total of clicks), they look like this:click2
 
-| 7 | 4 | 1 |
-| 8 | 5 | 2 |
+| 7 | 4 | 1 |\
+| 8 | 5 | 2 |\
 | 9 | 6 | 3 |
